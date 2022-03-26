@@ -25,3 +25,6 @@ Additionally, if the test is supposed to pass, add `.pass` after the description
 
 Some tests are simple enough, but please add comments to explain what is being tested if it is not obvious.
 
+### Contributing
+
+Please use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) in your commit messages to make it easier for others to understand your commits.
