@@ -1,0 +1,4 @@
+void kxi2022 main() {
+    3 + 3;
+    'h' + 'h'; // this might change due to unknown spec
+}
