@@ -2,4 +2,5 @@ class Test {}
 
 void kxi2022 main() {
     ((new Test())) = 5;
+    (new Test[1]) = 1;
 }

@@ -11,4 +11,6 @@ class Test {
 void kxi2022 main() {
     ((new Test()).function().a) = 3;
     (new Test()).function().a = 3;
+    Test test = new Test();
+    test.function().a = 0;
 }

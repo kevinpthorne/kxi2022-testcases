@@ -3,5 +3,8 @@ class Test {
 }
 
 void kxi2022 main() {
-    int hi = (new Test()).function;
+    int hi;
+    hi = (new Test()).function;
+    (new Test()).function = 1;
+    int hi_ = (new Test()).function;
 }
