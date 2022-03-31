@@ -1,6 +1,9 @@
 # KXI2022 Test Cases
 ====
 
+## Code Use
+REFER TO THE LICENSE FILE INCLUDED HERE. Use of this in your KXI compiler project MUST be disclosed.
+
 ## Organization
 
 * `unit/` - Unit tests
