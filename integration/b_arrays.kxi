@@ -13,7 +13,7 @@ class Test {
     }
 }
 
-void kxi2021 main() {
+void kxi2022 main() {
     int[] arrTest = new int[5];
     Test test = new Test();
     cout << test.test(5);

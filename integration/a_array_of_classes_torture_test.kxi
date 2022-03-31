@@ -20,7 +20,7 @@ class orange {
     }
 }
 
-void kxi2021 main() {
+void kxi2022 main() {
     orange[] basket = new orange[5];
     int x = 0;
     while (x < 5) {
