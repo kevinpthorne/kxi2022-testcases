@@ -1,7 +1,7 @@
 // Tests criteria under the B tier (Everything in C, plus objects).
 // Provision and direction courtesy of Michael Abbott, 2021.
 class Test {
-    Test() {return this;}
+    Test() {}
     public int test(int x) {
         cout << x;
         cout << '\n';

@@ -1,5 +1,5 @@
 // Tests criteria under the C- tier (Sequential code in the main function).
-// Provision and direction courtesy of Michael Abbott, 2021.
+// Provision and direction courtesy of Michael Abbott, 2021. Edited for KXI2022 by Kevin Thorne, 2022
 void kxi2022 main() {
     int x;
     int guess = 0-1;
@@ -26,7 +26,7 @@ void kxi2022 main() {
     cout << 'd';
     cout << ':';
     cin >> x;
-    x = ((x * (x + 5)) or (x * 127)) / 27;
+    x = ((x * (x + 5)) * (x * 127)) / 27;
     // cout << x;
 
     while (true) {
