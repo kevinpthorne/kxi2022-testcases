@@ -8,5 +8,7 @@ class Test {
 }
 
 void kxi2022 main() {
+    Test t = new Test().testArr()[0];
+    Test t2 = new Test().testArr()[0].testArr()[0];
     int i = new Test().testArr()[0].testArr()[0].intArr()[0];
 }
