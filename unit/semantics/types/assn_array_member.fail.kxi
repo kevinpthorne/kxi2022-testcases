@@ -3,4 +3,5 @@ void kxi2022 main() {
     a[0] = 'c';
     a[0] = true;
     a[0] = new int[5];
+    a[0] = 1;
 }
