@@ -1,0 +1,9 @@
+void kxi2022 main() {
+    int x;
+    cin >> x;
+    char y;
+    cin >> y;
+    cout << x;
+    cout << '\n';
+    cout << y;
+}

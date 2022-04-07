@@ -1,0 +1,14 @@
+void kxi2022 main() {
+    int a = 0;
+    int b = 1;
+    int c = -1;
+
+    if (a < b) {
+        cout << 't';
+    }
+    cout << 'e';
+    if (c < b) {
+        cout << 't';
+    }
+    cout << 'e';
+}

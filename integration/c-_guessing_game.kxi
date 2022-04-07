@@ -2,7 +2,8 @@
 // Provision and direction courtesy of Michael Abbott, 2021. Edited for KXI2022 by Kevin Thorne, 2022
 void kxi2022 main() {
     int x;
-    int guess = 0-1;
+    int test = 0-1;
+    int guess = -1;
     cout << 'G';
     cout << 'u';
     cout << 'e';
@@ -26,8 +27,9 @@ void kxi2022 main() {
     cout << 'd';
     cout << ':';
     cin >> x;
-    x = ((x * (x + 5)) * (x * 127)) / 27;
-    // cout << x;
+    x = ((x * (x + 5)) * (x * 127)) / 31;
+    cout << x;
+    cout << '\n';
 
     while (true) {
         cout << 'I';
@@ -48,6 +50,14 @@ void kxi2022 main() {
         cout << 's';
         cout << ':';
         cin >> guess;
+        cout << 'G';
+        cout << 'i';
+        cout << 'v';
+        cout << 'e';
+        cout << 'n';
+        cout << ' ';
+        cout << guess;
+        cout << '\n';
         if (guess < x) {
             cout << 'T';
             cout << 'o';
