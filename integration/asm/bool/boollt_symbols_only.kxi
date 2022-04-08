@@ -3,11 +3,11 @@ void kxi2022 main() {
     int b = 1;
     int c = -1;
 
-    if (a < b) {
+    if (a < b) { // 0 < 1
         cout << 't';
     }
     cout << 'e';
-    if (c < b) {
+    if (c < b) { // -1 < 1
         cout << 't';
     }
     cout << 'e';
