@@ -9,7 +9,7 @@ class Fibonacci {
         } else if (x == 1) {
             return 1;
         }
-        return this.compute(x-1) + this.compute(x-2);
+        return compute(x-1) + this.compute(x-2);
     }
 }
 

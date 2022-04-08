@@ -2,7 +2,6 @@
 // Provision and direction courtesy of Michael Abbott, 2021. Edited for KXI2022 by Kevin Thorne, 2022
 void kxi2022 main() {
     int x;
-    int test = 0-1;
     int guess = -1;
     cout << 'G';
     cout << 'u';
@@ -28,8 +27,8 @@ void kxi2022 main() {
     cout << ':';
     cin >> x;
     x = ((x * (x + 5)) * (x * 127)) / 31;
-    cout << x;
-    cout << '\n';
+    //cout << x;
+    //cout << '\n';
 
     while (true) {
         cout << 'I';
@@ -132,4 +131,132 @@ void kxi2022 main() {
     cout << 's';
     cout << '!';
     cout << '\n';
+
+    cout << 'T';
+    cout << 'e';
+    cout << 's';
+    cout << 't';
+    cout << 'i';
+    cout << 'n';
+    cout << 'g';
+    cout << ' ';
+    cout << 'o';
+    cout << 't';
+    cout << 'h';
+    cout << 'e';
+    cout << 'r';
+    cout << ' ';
+    cout << 'f';
+    cout << 'e';
+    cout << 'a';
+    cout << 't';
+    cout << 'u';
+    cout << 'r';
+    cout << 'e';
+    cout << 's';
+    cout << '.';
+    cout << '.';
+    cout << '.';
+    cout << '\n';
+
+    // ASSIGNMENT
+    cout << 'a';
+    cout << 's';
+    cout << 's';
+    cout << 'n';
+    cout << 'e';
+    cout << 'q';
+    cout << ':';
+    cout << ' ';
+
+    int test = 0-1;
+    
+    test += 1;
+    if (test == 0) {
+        cout << '+';
+    } else {
+        cout << '-';
+        cout << test;
+    }
+    cout << '|';
+
+    test -= 1;
+    if (test == -1) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+
+    test *= 2;
+    if (test == -2) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+
+    test /= 2;
+    if (test == -1) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+    cout << '\n';
+
+    // BOOL EXPRESSIONS
+    cout << 'b';
+    cout << 'o';
+    cout << 'o';
+    cout << 'l';
+    cout << ':';
+    cout << ' ';
+
+    bool t = true;
+    bool f = false;
+    int a = 0;
+    int b = 1;
+
+    if (t) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+    if (t != f) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+    if (a < b) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+    if (b > a) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+    if (a <= 0) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+    if (b >= 1) {
+        cout << '+';
+    } else {
+        cout << '-';
+    }
+    cout << '|';
+    cout << '\n';
+    
+
+    // SWITCH CASE
+
 }
