@@ -1,0 +1,6 @@
+class Test {}
+
+void kxi2022 main() {
+    int[] x = null;
+    Test[] y = null;
+}
