@@ -159,6 +159,11 @@ void kxi2022 main() {
     cout << '.';
     cout << '\n';
 
+    // + means test passed, | separates tests
+    // if any - is found, test failed
+    // other symbols like . or , maybe used to
+    // show intermediate steps
+
     // ASSIGNMENT
     cout << 'a';
     cout << 's';
@@ -258,5 +263,27 @@ void kxi2022 main() {
     
 
     // SWITCH CASE
+    cout << 's';
+    cout << 'w';
+    cout << 'i';
+    cout << 't';
+    cout << 'c';
+    cout << 'h';
+    cout << ':';
+    cout << ' ';
 
+    a = 0;
+    switch (a) {
+        case 1:
+            cout << '-';
+            break;
+        case 0:
+            cout << '.';
+        case 3:
+            cout << ',';
+        default:
+            cout << '+';
+    }
+    cout << '|';
+    cout << '\n';
 }
