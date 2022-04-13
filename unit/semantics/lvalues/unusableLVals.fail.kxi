@@ -6,7 +6,9 @@ class A {
 }
 
 void kxi2022 main() {
-
+    int[] x;
+    A y = new A();
+    A[] z;
 
     x[1][3];                //should be caught by lvalue visitor
 
@@ -18,9 +20,9 @@ void kxi2022 main() {
 
     z[1]();                 //should be caught by lvalue visitor
 
-    (null).x;               //should be caught by lvalue visitor
-    (null)[2];              //should be caught by lvalue visitor
-    null();                 //should be caught by lvalue visitor
+    //(null).x;               //should be caught by lvalue visitor
+    //(null)[2];              //should be caught by lvalue visitor
+    //null();                 //should be caught by lvalue visitor
 
     A a = new A(2)();       //should be caught by lvalue visitor
     B b = new B(4, 5)[1];   //should be caught by lvalue visitor

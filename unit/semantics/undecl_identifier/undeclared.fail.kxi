@@ -20,11 +20,18 @@ class Bar {
     private int x;
     A() {                   //Depending on implementation this should pass the undeclared visitor. Type checker will catch this for me
         this.x = 2;
-        this.r = 3;
+        this.r = 3; // undeclared
     }
 
     public T invalidReturnType() { //undeclared
         return new T();            //undeclared
+    }
+
+    public int invalidReturnType2() {
+        return new T();            //undeclared
+    }
+
+    public T invalidReturnType3() { // undefined type
     }
 }
 
@@ -71,7 +78,7 @@ void kxi2022 main() {
     cout << d.a.y;          //undeclared
     cout << d.getA().w;     //undeclared
 
-    cout << this.d.getA().x;
+    //cout << this.d.getA().x; // "this" cannot be used outside of a class
 
     cout << new D().foobar();
     cout << new D().q;
