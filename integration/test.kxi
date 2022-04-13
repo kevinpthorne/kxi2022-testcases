@@ -48,8 +48,8 @@ void kxi2022 main () {
             int cc = 2;
     }
 
-    cin >> c;
-    cout << c;
+    cin >> t;
+    cout << t;
 
     bool bb = true;
     bool bbf = false;
