@@ -1,0 +1,16 @@
+class Bar {
+    public void myFunction(int x) {
+        cout << '|';
+        cout << x;
+        cout << '|';
+        //cout << '\n';
+        //cout << y;
+        //cout << '\n';
+        //cout << c;
+    }
+}
+
+void kxi2022 main() {
+    Bar bar = new Bar();
+    bar.myFunction(420);
+}
