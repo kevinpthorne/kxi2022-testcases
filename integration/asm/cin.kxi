@@ -3,7 +3,11 @@ void kxi2022 main() {
     cin >> x;
     char y;
     cin >> y;
+    int z;
+    cin >> z;
     cout << x;
-    cout << '\n';
+    cout << '|';
     cout << y;
+    cout << '|';
+    cout << z;
 }
