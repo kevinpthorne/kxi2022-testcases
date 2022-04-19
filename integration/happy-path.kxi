@@ -1,0 +1,172 @@
+// This is a massive file that tests the happy path for all the negative tests that I have
+
+class A {
+    public int x = 5;       //shadows x from main
+    public char y;
+    public A parent;
+
+    A(int init) {
+        this.x = init;
+    }
+
+    public int getX() {
+        if (true) {
+            return 5;
+        } else {
+            return x;
+        }
+    }
+
+    public void adoptSelf() {
+        this.parent = this;
+    }
+}
+
+class B {
+    public A a = new A(5);
+    private A secretA = new A(6);
+
+    public A getSecret() {
+        return secretA;
+    }
+
+    public A getNull() {
+        return null;
+    }
+}
+
+class C {
+    public B[] bArray = new B[5];
+
+    public void printX() {
+        cout << this.bArray[0].a.x;
+    }
+
+    public void printParameter(int toPrint) {
+        cout << toPrint;
+        return;
+    }
+}
+
+class ArrayTests {
+    public A[] getAArray(int size) {
+        return new A[size];
+    }
+
+    public void arrayParam(char[] p) {
+        return;
+    }
+}
+
+class Wrapper {
+    private A a;
+
+    Wrapper(A a) {
+        this.a = a;
+    }
+
+    public void setA(A a) {
+        this.a = a;
+    }
+}
+
+void kxi2022 main() {
+    char x = 'x';
+    cout << x;
+
+    int y = 5;
+    if (y <= 5) {
+        cout << y;
+    }
+
+    while(true){}
+
+    A a = new A(7);
+    cout << a.x;
+
+    B b = new B();
+    cout << b.a.x;
+
+    C c = new C();
+    cout << c.bArray[0].a.x;
+
+    C[] d = new C[4];
+    cout << d[0].bArray[2].a.x;
+
+    cout << new C().bArray[0].a.x;
+
+    c.printX();
+
+    c.printParameter(3);
+
+    cout << b.getSecret().x;
+
+    ArrayTests funWithArrays = new ArrayTests();
+    funWithArrays.getAArray(3)[2].x;
+
+    char[] name = new char[16];
+    funWithArrays.arrayParam(name);
+
+    //valid cin statements
+    cin >> x;
+    cin >> y;
+    cin >> name[4];
+    cin >> a.x;
+    cin >> a.y;
+
+    //valid switch
+    switch (y) {
+        case 1:
+            break;
+        default:
+    }
+
+    switch (x) {
+        case 'a':
+        default:
+    }
+
+    //valid assignments
+    int i;
+    int j;
+    int k = 4;
+    i = j += k;
+
+    C cc = new C();
+    c = cc;
+
+    c = d[2];
+
+    //valid binary expressions
+
+    1 + 2 + 3 + 5 - 5 * 6 + 4 / 2;
+
+    false || 4 > 5;
+    x < 'r';
+    4 + 5 >= 6 * 4 && 80 <= 81;
+
+    //valid unary expressions
+
+    !(true || false);
+
+    -(6* 4);
+    + 4;
+
+    //valid function calls
+    int anotherInt = a.getX();
+
+    //valid uses of null
+    null;
+    a = null;
+    if (a == null) {}
+
+    A apple = null;
+
+    Wrapper test = new Wrapper(null);
+
+    test.setA(null);
+
+    char[] charArray = null;
+
+    return;
+}

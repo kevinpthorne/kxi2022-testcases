@@ -1,0 +1,21 @@
+class A {
+    private B b;
+
+    public void foo() {
+        return b;           //e
+    }
+
+    public int bar() {
+        if (false) {
+            return true;        //e
+        } else {
+            return;             //e
+        }
+    }
+}
+
+class B {}
+
+void kxi2022 main() {
+    return 0;               //e
+}

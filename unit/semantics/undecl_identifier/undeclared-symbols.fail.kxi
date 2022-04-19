@@ -1,0 +1,32 @@
+class A {
+    A() {
+        this.r = 3;		//e
+    }
+}
+
+class D {
+    public A a = new A();
+
+    public A getA() {
+        return a;
+    }
+}
+
+void kxi2022 main() {
+    cout << x;			//e
+    cout << w.y.x;		//e
+    cout << p[x];		//e
+
+    A a = new A();
+    cout << a.q;		//e
+    cout << a.printX();	//e
+
+
+    D d = new D();
+    d.a.fakeFoo();		//e
+    cout << d.a.y;		//e
+    cout << d.getA().w;	//e
+
+    cout << new D().foobar();		//e
+    cout << new D().q;			//e
+}

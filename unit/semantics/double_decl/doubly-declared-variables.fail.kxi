@@ -1,0 +1,21 @@
+class A {
+    public int x = 5;
+    public int x = 6;		//Fail
+
+    public void foo() {
+        int x = 7;          // this doesn't throw an error, we're just shadowing
+    }
+
+    public void bar(int i) {
+        int i = 5;			//Fail
+    }
+}
+
+void kxi2022 main() {
+    int y = 4;
+    char y = '4';			//Fail
+
+    char a = 'a';
+    A a = new A();			//Fail
+
+}

@@ -1,0 +1,5 @@
+void kxi2022 main() {
+    char c = 'c';
+    char cd = c += 'd';     //e
+    cd += 5;                //e
+}

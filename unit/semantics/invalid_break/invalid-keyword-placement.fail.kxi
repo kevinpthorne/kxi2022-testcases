@@ -1,0 +1,5 @@
+void kxi2022 main() {
+    int x = 5;
+    cout << this.x;			//Invalid this placement
+    break;				//Invalid break placement
+}

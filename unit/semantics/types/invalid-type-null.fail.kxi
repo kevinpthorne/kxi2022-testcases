@@ -1,0 +1,30 @@
+class A {
+
+    A(int x) {}
+
+    public int foo() {
+        return null;        //e
+    }
+
+    public void bar(char c) {
+        return;
+    }
+
+}
+
+void kxi2022 main() {
+    int x;
+
+    if (x == null) {}       //e
+    int y = null;           //e
+
+    A a = new A(null);      //e
+
+    a.bar(null);            //e
+
+    bool baz;
+    baz = null;             //e
+
+
+
+}

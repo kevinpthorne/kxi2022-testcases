@@ -1,0 +1,18 @@
+class A {
+    public void foo() {}
+    public void bar(int x) {}
+
+    public int baz() { return 5; }
+}
+
+void kxi2022 main() {
+    A a = new A();
+    a.foo(3);           //e
+    a.bar('a');         //e
+    a.bar(5, 10);       //e
+
+    char y = a.baz();   //e
+
+
+
+}

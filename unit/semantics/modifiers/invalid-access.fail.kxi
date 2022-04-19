@@ -1,0 +1,22 @@
+class A {
+    private int x;
+    private void foo() {}
+}
+
+class B {
+    public A a;
+    private A secretA;
+}
+
+void kxi2022 main() {
+    A a = new A();
+    cout << a.x;            //e
+    a.foo();                //e
+
+    B b = new B();
+    b.a.x;                  //e
+    b.a.foo();              //e
+    b.secretA.x;            //e
+    b.secretA.foo();        //e
+
+}

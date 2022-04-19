@@ -1,0 +1,11 @@
+class A {}
+
+void kxi2022 main() {
+    A a = new A();
+    switch (a) {            //e
+        case 'a':           //e
+            cout << 'a';
+        default:
+            break;
+    }
+}

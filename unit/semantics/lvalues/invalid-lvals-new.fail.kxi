@@ -1,0 +1,7 @@
+class A {}
+
+void kxi2022 main() {
+    A b = new A();
+    new A() = b;		//Fail
+    new A() = new A();	//Fail
+}
