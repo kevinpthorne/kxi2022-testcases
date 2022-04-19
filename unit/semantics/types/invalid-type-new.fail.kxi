@@ -1,0 +1,18 @@
+class A {}
+
+class B {
+    B(int init) {}
+}
+
+void kxi2022 main() {
+    int[] numbers = new int['a'];   //e
+
+    int x = new int();              //e
+
+    A a = new A(1);                 //e
+
+    B b = new B();                  //e
+
+    B otherB = new B('1');          //e
+
+}

@@ -1,0 +1,27 @@
+class A {
+    public void foo(C c) {	//e
+        cout << c;
+    }
+}
+
+class D {
+    public T invalidReturnType() {		//e
+        return new T();				//e
+    }
+}
+
+class Baz {
+    Bazz() {						//e
+        cout << 'B'; cout << 'A'; cout << 'Z'; cout << '\n';
+    }
+}
+
+void kxi2022 main() {
+    A aa = new AA();				//e
+
+    B b;
+
+    A[] aaa = new C[2];				//e
+
+    B[] bbb = new A[5];				//e
+}

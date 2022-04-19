@@ -1,0 +1,14 @@
+class A {
+    A() {}
+    A(int x) {}		//If function overloading is implemented, this won't fail, otherwise it should
+
+    public int foo() {
+        return 5;
+    }
+
+    public int foo() {	//Fail
+        return 6;
+    }
+}
+
+void kxi2022 main() {}

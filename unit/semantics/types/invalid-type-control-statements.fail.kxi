@@ -1,0 +1,12 @@
+class A {
+    private B b1;
+
+    public void foo() {
+        if (5) {}           //e
+        while(b1) {}        //e
+    }
+}
+
+class B {}
+
+void kxi2022 main() {}

@@ -1,0 +1,7 @@
+void kxi2022 main() {
+    x[1][3];				//Fail
+
+    B b = new B(4, 5)[1];	//Fail
+
+    D[] d = new D[2][1];		//Fail
+}

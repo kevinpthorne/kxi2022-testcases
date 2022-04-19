@@ -1,0 +1,11 @@
+class A {}
+
+class B {}
+
+void kxi2022 main() {
+    int num = 'c';          //e
+
+    A a = new B();          //e
+
+    char name = new char[16];   //e
+}

@@ -1,0 +1,16 @@
+void kxi2022 main() {
+
+    y.foo()(2);		//Fail
+
+    bar(baz);			//Fail
+
+    z[1]();			//Fail
+
+    A a = new A(2)();	//Fail
+	
+    C[] c = new C[3](2);	//Fail
+
+    t.foo() = 6;		//Fail
+
+    t.bar() = new A();	//Fail
+}

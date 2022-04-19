@@ -1,0 +1,9 @@
+class A {}
+
+void kxi2022 main() {
+    + true;			//e
+    A a = new A();
+    ! (a);			//e
+    - 'a';			//e
+
+}

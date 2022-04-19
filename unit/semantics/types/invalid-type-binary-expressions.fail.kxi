@@ -1,0 +1,13 @@
+class A {}
+
+void kxi2022 main() {
+    5 + 'c';       //e
+    'y' + '1';     //e
+
+    A a = new A();
+    A otherA = new A();
+    a >= otherA; //e
+
+    0 || 5;         //e
+
+}
