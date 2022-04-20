@@ -7,7 +7,7 @@ class B {
 void kxi2022 main() {
     int[] numbers = new int['a'];   //e
 
-    int x = new int();              //e
+    //int x = new int();              //e
 
     A a = new A(1);                 //e
 

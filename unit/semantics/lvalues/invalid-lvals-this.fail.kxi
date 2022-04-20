@@ -1,7 +1,7 @@
 class A {
     public void foo() {
-        this[1];            //Fail
-        this();             //Fail
+        //this[1];            //Fail
+        //this();             //Fail
         this = new A();     //Fail
         this = 5;           //Fail
     }

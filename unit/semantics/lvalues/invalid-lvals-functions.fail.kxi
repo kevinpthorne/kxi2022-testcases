@@ -1,4 +1,15 @@
+class Y {
+    public int foo() {}
+}
+
+class C {}
+class B {
+    B(int x) {}
+}
+class A {}
+
 void kxi2022 main() {
+    Y y;
 
     y.foo()(2);		//Fail
 
@@ -6,7 +17,7 @@ void kxi2022 main() {
 
     z[1]();			//Fail
 
-    A a = new A(2)();	//Fail
+    B a = new B(2)();	//Fail
 	
     C[] c = new C[3](2);	//Fail
 

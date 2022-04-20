@@ -8,16 +8,16 @@ class A {
 
 void kxi2022 main() {
     A a = new A();
-    cin >> a;               //e
-    cin >> 5;               //e
-    cin >> 'a';             //e
+    cin >> a;               //e 
+    //cin >> 5;               //e PARSING error
+    //cin >> 'a';             //e PARSING error
 
     int x;
     int y;
 
-    cin >> x + y;           //e
-    cin >> x = 5;           //e
+    //cin >> x + y;           //e PARSING error
+    //cin >> x = 5;           //e PARSING error
     cin >> new A();         //e
-    cin >> null;            //e
+    //cin >> null;            //e PARSING error
     cin >> a.bar();         //e
 }
