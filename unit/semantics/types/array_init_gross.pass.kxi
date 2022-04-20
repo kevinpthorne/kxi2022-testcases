@@ -1,0 +1,15 @@
+class C {
+    public int x = 5;
+    public int [] intArr() {
+        return new int[5];
+    }
+    public C [] cArr() {
+        return new C[2];
+    }
+}
+
+void kxi2022 main() {
+    C c = new C();
+    int[] i = new int[c.intArr()[0]];
+    int[] j = new int[c.cArr()[0].x];
+}
