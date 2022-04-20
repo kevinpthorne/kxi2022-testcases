@@ -9,9 +9,7 @@ void kxi2022 main() {
             cout << '-';
             break;
         case 0:
-            cout << '.';
         case 3:
-            cout << ',';
         default:
             cout << '+';
     }
@@ -22,7 +20,6 @@ void kxi2022 main() {
     char b = 'b';
     switch (b) {
         case 'b':
-            cout << '.';
         case 'c':
             cout << '+';
             break;
@@ -31,17 +28,6 @@ void kxi2022 main() {
     }
     cout << '|';
     cout << '\n';
-
-    switch (b) {
-        case 'b':
-        case 'c':
-        default:
-    }
-    cout << '+';
-    cout << '|';
-    cout << '\n';
-
-
 }
 
 // 
