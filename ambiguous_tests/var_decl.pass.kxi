@@ -1,0 +1,17 @@
+// Default initialization was left somewhat ambiguous
+// in the compiler specification. Your milage may vary
+
+void kxi2022 main() {
+    int y = x * 5; // x = 0
+
+    cout << y;
+    cout << ',';  // x becomes 44 (ASCII comma)
+    cout << x;   // x: 44
+
+    int x = 1; // x = 1
+
+    cout << '|';
+    cout << y;
+    cout << ',';
+    cout << x; // x: 1
+}

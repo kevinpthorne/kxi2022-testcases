@@ -2,6 +2,6 @@ class myClass{
 	public int y;
 }
 void kxi2022 main(){
-	myClass c;
-	int i = c.i;
+    myClass c;
+    int x = c.i;
 }

@@ -1,4 +1,5 @@
 class Test {
+    private int[] x;
     public Test myMethod(int y) {
         this[1];
         this.x[1]; // good!
